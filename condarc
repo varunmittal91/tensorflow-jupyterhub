@@ -1,0 +1,4 @@
+envs_dirs:
+  - /home/jovyan/.conda-envs/
+create_default_packages:
+  - ipykernel
