@@ -6,7 +6,7 @@ RUN apt-get -y install gnupg2
 RUN wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb
 RUN dpkg -i cuda-keyring_1.0-1_all.deb
 RUN apt-get update
-RUN apt-get -y install cuda
+RUN apt-get -y install libnvidia-compute-520
 
 RUN conda install nb_conda_kernels -y
 COPY condarc /home/jovyan/.condarc
